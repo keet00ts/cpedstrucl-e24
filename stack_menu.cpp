@@ -77,8 +77,11 @@ int main() {
   			system("pause");
   			break;
   	case 4: exit(1);
-  	default : cout << "Invalid Input please try again" << endl;
+		  
+  	default : cout << "wrong input" << endl;
+		  
   			  system("pause");
+		  
   			  d=0;
   }
 }while(d=1);
