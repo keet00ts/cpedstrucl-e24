@@ -27,6 +27,15 @@ int popValue(){
     delete n;
     return ret;
 }
+void displayValues(){
+Node *j = head;
+Node *k = head;
+while (k){
+j=k;
+cout << j -> x << endl;
+k = j-> next;
+}
+}
 private:
 Node *head;
 };
@@ -46,15 +55,15 @@ cin>>num;
 list.addValue(num);
 cout<<"Value Added!"<<endl; flag = 1; break; case 2: if(flag>0){
 list.popValue();
-cout<<"Value deleted!"<<endl;
-flag--;
+cout<<"Value deleted!"<<endl; flag--; } else { cout<<"Add a value first!"<<endl; } break; case 3:exit(1); break; case 4: if(flag>0){
+list.displayValues();
+break;
 }
 else
 {
-cout<<"Add a value first!"<<endl;
+cout<<"(EMPTY)/n"<<endl;
 }
-break;
-case 3:exit(1);
+system("pause");
 break;
 }
 }while(choice != 3);
@@ -64,5 +73,6 @@ void mainMenu(){
 cout<<"[1] Insert into linked list"<<endl;
 cout<<"[2] Pop"<<endl;
 cout<<"[3] EXIT"<<endl;
+cout<<"[4] Display Contents"<<endl;
 cout<<"Your choice: ";
 }
