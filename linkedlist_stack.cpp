@@ -21,9 +21,8 @@ int main()
  
     cout<<"[1] Push" << endl;
     cout<<"[2] Pop" << endl;
-    cout<<"[3] Reverse (Temporarily Unavailable)" << endl;
-    cout<<"[4] Display" << endl;
-    cout<<"[5] Exit" << endl;
+    cout<<"[3] Display" << endl;
+    cout<<"[4] Exit" << endl;
  
     createList();
  
